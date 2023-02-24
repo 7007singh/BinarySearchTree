@@ -16,6 +16,16 @@ namespace BinarySearchTree
             tree.AddNode(56);
             tree.AddNode(30);
             tree.AddNode(70);
+            tree.AddNode(22);
+            tree.AddNode(40);
+            tree.AddNode(60);
+            tree.AddNode(95);
+            tree.AddNode(11);
+            tree.AddNode(65);
+            tree.AddNode(3);
+            tree.AddNode(16);
+            tree.AddNode(63);
+            tree.AddNode(67);
             tree.PreOrderTraversal(tree.root);
             int treeSize = tree.Size(tree.root);
             Console.WriteLine("\nSize of BST: " + treeSize);
