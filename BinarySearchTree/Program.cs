@@ -29,6 +29,16 @@ namespace BinarySearchTree
             tree.PreOrderTraversal(tree.root);
             int treeSize = tree.Size(tree.root);
             Console.WriteLine("\nSize of BST: " + treeSize);
+            int key = Convert.ToInt32(tree.Search(tree.root, 11));
+            if(key == 0)
+            {
+                Console.WriteLine("node not present");
+            }
+            else
+            {
+                Console.WriteLine("node present");
+            }
+            Console.WriteLine(key);
             Console.ReadLine();
         }
     }

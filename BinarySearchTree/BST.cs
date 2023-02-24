@@ -56,6 +56,22 @@ namespace BinarySearchTree
             int rightNode = Size(root.right);
             return leftNode + rightNode + 1;
         }
+        public bool Search(Node root, int data)
+        {
+            if(root == null)
+            {
+                return false;
+            }
+            if(root.data < data)
+            {
+                return Search(root.right, data);
+            }
+            if(root.data > data)
+            {
+                return Search(root.left, data);
+            }
+            return true;
+        }
         public void PreOrderTraversal(Node temp)
         {
             if (temp != null)
