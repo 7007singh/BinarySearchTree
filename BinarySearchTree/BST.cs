@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BinarySearchTree
 {
-    internal class BinarySTree
+    internal class BST
     {
         public Node root;
         public void AddNode(int data)
@@ -45,6 +45,16 @@ namespace BinarySearchTree
                     }
                 }
             }
+        }
+        public int Size(Node root)
+        {
+            if(root == null)
+            {
+                return 0;
+            }
+            int leftNode = Size(root.left);
+            int rightNode = Size(root.right);
+            return leftNode + rightNode + 1;
         }
         public void PreOrderTraversal(Node temp)
         {

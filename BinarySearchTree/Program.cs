@@ -12,11 +12,13 @@ namespace BinarySearchTree
         {
             Console.WriteLine("___Binary Search Program___");
             Console.WriteLine("Inserted nodes in BST");
-            BinarySTree tree = new BinarySTree();
+            BST tree = new BST();
             tree.AddNode(56);
             tree.AddNode(30);
             tree.AddNode(70);
             tree.PreOrderTraversal(tree.root);
+            int treeSize = tree.Size(tree.root);
+            Console.WriteLine("\nSize of BST: " + treeSize);
             Console.ReadLine();
         }
     }
